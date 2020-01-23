@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane accessibleRole="BUTTON" prefHeight="600.0" prefWidth="950.0" style="-fx-background-color: #B0E0E6;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Dash">
+   <children>
+      <VBox alignment="CENTER" layoutX="-4.0" prefHeight="604.0" prefWidth="226.0" style="-fx-background-color: #0B243B;">
+         <children>
+            <ImageView fitHeight="173.0" fitWidth="171.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@workspace/hospital.png" />
+               </image>
+            </ImageView>
+         </children></VBox>
+      <Label ellipsisString="" layoutX="382.0" layoutY="28.0" prefHeight="87.0" prefWidth="445.0" text="GESTION DES PATIENTS" textFill="#1d5914" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Candara" size="38.0" />
+         </font>
+      </Label>
+ 
+      <ImageView fx:id="ImgDepE" fitHeight="125.0" fitWidth="125.0" layoutX="510.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@workspace/cardiologist.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImgDepF" fitHeight="119.0" fitWidth="125.0" layoutX="768.0" layoutY="371.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@workspace/psychologist.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImgDepA" fitHeight="133.0" fitWidth="133.0" layoutX="285.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@workspace/ophtalmologist.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImgDepD" fitHeight="133.0" fitWidth="125.0" layoutX="285.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@workspace/gynecologist.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImgDepC" fitHeight="125.0" fitWidth="125.0" layoutX="755.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@workspace/dentist%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImgDepB" fitHeight="125.0" fitWidth="133.0" layoutX="510.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@workspace/doctor%20(3).png" />
+         </image>
+      </ImageView>
+      <Hyperlink fx:id="DepA" layoutX="285.0" layoutY="312.0" onAction="#DepartementA" onMouseEntered="#RotationA" onMouseExited="#Rotation0" prefHeight="34.0" prefWidth="133.0" style="-fx-background-color: #E74C3C;" text="Departement A" textFill="#f0f0f0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="DepB" layoutX="506.0" layoutY="312.0" onAction="#DepartementB" onMouseEntered="#RotationB" onMouseExited="#RotationB0" prefHeight="34.0" prefWidth="133.0" style="-fx-background-color: #E74C3C;" text="Departement B" textFill="#f0f0f0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="DepC" layoutX="751.0" layoutY="312.0" onAction="#DepartementC" onMouseEntered="#RotationC" onMouseExited="#RotationC0" prefHeight="34.0" prefWidth="133.0" style="-fx-background-color: #E74C3C;" text="Departement C" textFill="#f0f0f0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="DepD" layoutX="281.0" layoutY="518.0" onAction="#DepartementD" onMouseEntered="#RotationD" onMouseExited="#RotationD0" prefHeight="34.0" prefWidth="133.0" style="-fx-background-color: #E74C3C;" text="Departement D" textFill="#f0f0f0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="DepE" layoutX="506.0" layoutY="518.0" onAction="#DepartementE" onMouseEntered="#RotationE" onMouseExited="#RotationE0" prefHeight="34.0" prefWidth="133.0" style="-fx-background-color: #E74C3C;" text="Departement E" textFill="#f0f0f0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="DepF" layoutX="761.0" layoutY="518.0" onAction="#DepartementF" onMouseEntered="#RotationF" onMouseExited="#RotationF0" prefHeight="34.0" prefWidth="133.0" style="-fx-background-color: #E74C3C;" text="Departement F" textFill="#f0f0f0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Hyperlink>
+      <Button fx:id="decbtn" layoutX="843.0" layoutY="16.0" mnemonicParsing="false" onAction="#deconnBtn" text="Deconnection" />
+      <Text layoutX="231.0" layoutY="595.0" opacity="0.32" strokeType="OUTSIDE" strokeWidth="0.0" text="Samad@2019" wrappingWidth="76.53674459457397" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.95"
+            prefHeight="600.0" prefWidth="1038.0" style="-fx-background-color: #B0E0E6;" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.loginController">
+   <children>
+
+            
+                  <JFXTextField fx:id="user" focusColor="#131519" layoutX="610.0" layoutY="200.0" prefHeight="44.0" prefWidth="241.0" promptText="Username">
+         <font>
+            <Font name="Ebrima" size="20.0" />
+         </font>
+      </JFXTextField>
+
+      
+            <JFXButton fx:id="login_btn" layoutX="627.0" layoutY="381.0" onAction="#login" prefHeight="44.0" prefWidth="190.0" style="-fx-background-color: #E74C3C;" text="Se Connecter" textFill="#ddd1d1">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+
+            <JFXPasswordField fx:id="pass" focusColor="#131313" layoutX="610.0" layoutY="297.0" prefHeight="44.0" prefWidth="241.0" promptText="Password">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXPasswordField>
+
+            
+                  <ImageView fitHeight="44.0" fitWidth="38.0" layoutX="541.0" layoutY="206.0" opacity="0.56" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@user.png" />
+         </image>
+      </ImageView>
+
+            
+                  <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="541.0" layoutY="300.0" opacity="0.56" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pass.png" />
+         </image>
+      </ImageView>
+
+      
+      <ImageView depthTest="ENABLE" fitHeight="360.0" fitWidth="349.0" layoutX="38.0" layoutY="138.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@workspace/hospital.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      </ImageView>
+      <JFXTextField labelFloat="true" layoutX="21.0" layoutY="14.0" prefHeight="86.0" prefWidth="410.0" text="Hospital-Gestion Des RDV">
+         <font>
+            <Font name="Ink Free" size="35.0" />
+         </font>
+      </JFXTextField>
+      <Hyperlink layoutX="225.0" layoutY="461.0" textFill="#240e0e" />
+      <Hyperlink layoutX="754.0" layoutY="341.0" onAction="#RouteToSignUp" text="mot de passe oublié" textFill="#d71313" />
+      <ImageView fitHeight="31.0" fitWidth="38.0" layoutX="564.0" layoutY="213.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@workspace/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="38.0" layoutX="564.0" layoutY="313.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@workspace/pass.png" />
+         </image>
+      </ImageView>
+
+
+   </children>
+</AnchorPane>

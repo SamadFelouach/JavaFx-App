@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.95" prefHeight="600.0" prefWidth="1038.0" style="-fx-background-color: #B0E0E6;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+
+            
+                  <JFXTextField fx:id="user" focusColor="#131519" layoutX="639.0" layoutY="181.0" prefHeight="44.0" prefWidth="241.0" promptText="Username">
+         <font>
+            <Font name="Ebrima" size="20.0" />
+         </font>
+      </JFXTextField>
+
+      
+            <JFXButton fx:id="login_btn" layoutX="649.0" layoutY="367.0" onAction="#login" prefHeight="44.0" prefWidth="190.0" style="-fx-background-color: #E74C3C;" text="Se Connecter" textFill="#ddd1d1">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+
+            <JFXPasswordField fx:id="pass" focusColor="#131313" layoutX="639.0" layoutY="275.0" prefHeight="44.0" prefWidth="241.0" promptText="Password">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXPasswordField>
+
+            
+                  <ImageView fitHeight="44.0" fitWidth="38.0" layoutX="591.0" layoutY="197.0" opacity="0.56" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@user.png" />
+         </image>
+      </ImageView>
+
+            
+                  <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="591.0" layoutY="281.0" opacity="0.56" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pass.png" />
+         </image>
+      </ImageView>
+
+      
+      <ImageView depthTest="ENABLE" fitHeight="271.0" fitWidth="284.0" layoutX="50.0" layoutY="68.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@denIcone.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      </ImageView>
+      <Text layoutX="64.0" layoutY="380.0" opacity="0.79" strokeType="OUTSIDE" strokeWidth="0.0" text="Dr. Sari Coll" wrappingWidth="385.33668518066406">
+         <font>
+            <Font name="Candara" size="33.0" />
+         </font>
+      </Text>
+      <Hyperlink fx:id="forgotLink" layoutX="774.0" layoutY="327.0" onAction="#forgotLink" text="Mot de Passe Oubliee ?" textFill="#d22727" />
+      <JFXTextField labelFloat="true" layoutX="29.0" layoutY="389.0" prefHeight="86.0" prefWidth="489.0" text="Prendre Un RDV En  30 Secondes  ">
+         <font>
+            <Font name="Ink Free" size="35.0" />
+         </font>
+      </JFXTextField>
+      <Hyperlink layoutX="225.0" layoutY="461.0" textFill="#240e0e" />
+      <Hyperlink layoutX="38.0" layoutY="484.0" onAction="#RouteToSignUp" text="Vous avez pas Un Compte ?" textFill="#d71313" />
+      <CheckBox layoutX="610.0" layoutY="442.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="133.0" text="Remember Me .." textFill="#160202c4" />
+
+
+   </children>
+</AnchorPane>
